@@ -1,0 +1,35 @@
+---
+title: "Module7_Challenges"
+author: "Hans Bilger"
+date: "February 5, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Gettysburg address
+```{r}
+
+abe <- ("Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.")
+
+# 1 word character strings
+abe_split <- c(str_split(abe, " ", simplify = TRUE))
+
+# every third element
+abe3 <- abe_split[seq(from = 1, to = 30, by = 3)]
+
+##remove punctuation and special characters
+breathless <- gsub("[[:punct:]]","","Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.")
+
+#1 word character strings, no punctuation
+breathless_split <- c(str_split(breathless, " ", simplify = TRUE))
+
+# every third element, no punctuation
+breathless3 <- breathless_split[seq(from = 1, to = 30, by = 3)]
+
+
+
+
+```
