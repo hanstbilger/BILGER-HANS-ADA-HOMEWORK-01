@@ -37,4 +37,38 @@ df <- read.csv("~/Development/repos/ADA_Module7/random-people.csv", sep = ",", h
 # only print the first several rows
 head(df[, c(1, 3, 4, 11, 12)])
 
+str(df)
+
+df[, 4]
+str(df[, 4])
+df$name.last
+str(df[[4]])
+df[["name.last"]]
+str(df[["name.last"]])
+df[4]
+str(df[4])
+df$name.first
+df[4, ]
+str(df[4, ])
+df["name.last"]
+df$name.last
+str(df$name.last)
+
+df <- cbind(df, id = c(1:20))
+df <- cbind(df, school = c("UT", "UT", "A&M", "A&M", "UT", "Rice", "Texas Tech", 
+    "UT", "UT", "Texas State", "A&M", "UT", "Rice", "UT", "A&M", "Texas Tech", 
+    "A&M", "UT", "Texas State", "A&M"))
+head(df)
+
+new_df <- df[df$school == "UT", ]
+
+df$school == "UT"
+
+new_df <- df[df$school == "UT" | df$gender == "female", ]
+View(new_df)
+
+new_df <- df[, c(1, 4, 3)]
+View(new_df)
+
+
 ```
