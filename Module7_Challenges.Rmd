@@ -1,5 +1,5 @@
 ---
-title: "Module7_Challenges"
+title: "BILGER-HANS-HOMEWORK-01"
 author: "Hans Bilger"
 date: "February 5, 2019"
 output:
@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Gettysburg address
+## Gettysburg address
 ```{r}
 library(stringr)
 abe <- ("Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.")
@@ -33,7 +33,7 @@ breathless3 <- breathless_split[seq(from = 1, to = 30, by = 3)]
 
 ```
 
-#matricies
+##Matricies
 ```{r}
 
 m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
@@ -75,7 +75,8 @@ a
 
 ```
 
-#primate taxonomy
+##Primate Taxonomy
+######*Below is the code I came up with when I did this on my own. Below that is the solution that came out of working with Allison and Caitlin.*
 ```{r}
 
 Platyrrhini <- list("Cebidae", "Atelidae", "Pitheciidae")
@@ -100,7 +101,7 @@ Haplorhini
 Platyrrhini
 ```
 
-#Allison primate solution
+######*Allison/Caitlin primate solution*
 ```{r}
 
 Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
